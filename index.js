@@ -88,7 +88,7 @@ app.get('/memory.html', requireAuth, (req, res) => {
 });
 
 // ── Memory API ──
-app.use('/api/memory', require('./routes/memory-api'));
+app.use(require('./routes/memory-api'));
 
 // ── Chat ingest API（接收外部机器人消息，攒记忆）──
 app.use('/api', require('./routes/ingest'));
