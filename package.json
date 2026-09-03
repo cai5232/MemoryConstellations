@@ -24,7 +24,9 @@
     "node-cron": "^4.2.1",
     "sharp": "^0.34.5",
     "tiktoken": "^1.0.21",
-    "undici": "^6.24.1"
+    "undici": "^6.24.1",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.0"
   },
   "repository": "github.com/ClaraShafiq/MemoryConstellations"
 }
