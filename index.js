@@ -26,6 +26,9 @@ app.use(session({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
+// Authenticated remote MCP endpoint for Codex clients
+require('./mcp-route')(app);
+
 // Static files
 app.use(express.static(path.join(__dirname)));
 
